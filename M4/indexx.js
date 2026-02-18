@@ -1,8 +1,21 @@
+let mangas = [
+  "Naruto",
+  "One Piece",
+  "DBZ",
+  "Bleach",
+  "HxH",
+  "JJK",
+  "Spy x Family",
+  "Sakamoto Days",
+  "JJBA",
+  "HnK",
+  "Boruto",
+];
+
 function tirage() {
-  const tableau = ["Pierre", "Feuille", "Ciseaux", "Pistolet", "Dynamite"];
-  const indexAleatoire = Math.floor(Math.random() * tableau.length);
-  const elementTire = tableau[indexAleatoire];
+  const indexAleatoire = Math.floor(Math.random() * mangas.length);
+  const elementTire = mangas[indexAleatoire];
 
   document.getElementById("affichage").textContent =
-    "Élément tiré : " + elementTire;
+    "Manga tiré au sort : " + elementTire;
 }
